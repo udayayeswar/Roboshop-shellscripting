@@ -8,5 +8,5 @@
  mv static/* .
  rm -rf frontend-master README.md
  mv localhost.conf /etc/nginx/default.d/roboshop.conf
-  systemctl enable nginx
+ systemctl enable nginx
  systemctl restart nginx 
