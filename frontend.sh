@@ -16,10 +16,13 @@
  echo unzip web content
  unzip /tmp/frontend.zip &>>/tmp/frontend
  echo status = $?
+
  mv frontend-main/static/* . &>>/tmp/frontend
  echo status = $?
+
  mv frontend-main/localhost.conf /etc/nginx/default.d/roboshop.conf &>>/tmp/frontend
 echo status = $?
+
  echo start NIGINX
   systemctl enable nginx &>>/tmp/frontend
  systemctl restart nginx &>>/tmp/frontend
